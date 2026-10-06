@@ -25,12 +25,19 @@ export const Navbar: React.FC<NavbarProps> = ({
         </a>
 
         {/* Zone 2: 4-6 nav links, single-line clean text */}
-        <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
           <a href="#overview" className="hover:text-cyan-400 transition-colors">
             Technology
           </a>
           <a href="#simulator" className="hover:text-cyan-400 transition-colors">
-            Breaker Simulator
+            Simulator
+          </a>
+          <a href="#active-alerts" className="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500" />
+            </span>
+            <span>Alerts</span>
           </a>
           <a href="#failure-modes" className="hover:text-cyan-400 transition-colors">
             Failure Modes

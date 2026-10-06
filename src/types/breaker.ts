@@ -93,3 +93,26 @@ export interface FailureModeInfo {
   riskSeverity: 'Critical' | 'High' | 'Severe';
   standardReference: string;
 }
+
+export type AlertSeverity = 'critical' | 'warning' | 'advisory';
+
+export interface SystemAlert {
+  id: string;
+  breakerId: string;
+  breakerTag: string;
+  breakerName: string;
+  panelId: string;
+  timestamp: string;
+  severity: AlertSeverity;
+  anomalyTitle: string;
+  affectedPhase: 'L1' | 'L2' | 'L3' | '3-Phase' | 'Chassis';
+  telemetryMetric: string;
+  currentValue: string;
+  nominalThreshold: string;
+  timeToFailureEstimate: string;
+  riskDescription: string;
+  recommendedAction: string;
+  isAcknowledged: boolean;
+  acknowledgedBy?: string;
+  workOrderGenerated?: boolean;
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Simulator } from './components/Simulator';
+import { ActiveAlerts } from './components/ActiveAlerts';
 import { FailureModes } from './components/FailureModes';
 import { FleetMonitor } from './components/FleetMonitor';
 import { RoiCalculator } from './components/RoiCalculator';
@@ -57,6 +58,10 @@ export default function App() {
         />
 
         <Simulator onOpenAiPrognosis={handleOpenAiPrognosis} />
+
+        <ActiveAlerts
+          onInspectInSimulator={() => scrollToSection('simulator')}
+        />
 
         <FailureModes />
 
