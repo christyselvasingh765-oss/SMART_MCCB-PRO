@@ -1,0 +1,6 @@
+{
+  "name": "Smart MCCB Pro | Predictive Circuit Breaker Health & Early Failure Detection",
+  "description": "Industrial IoT & AI platform for predictive health monitoring, contact erosion tracking, thermal runaway prevention, and early failure detection in Molded Case Circuit Breakers (MCCB).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
